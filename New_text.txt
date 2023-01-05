@@ -1,0 +1,24 @@
+上传首次
+git init
+git add .
+git commit -m "v1"
+git branch -M main
+git remote add origin https://github.com/Hokering/Git_Study.git
+git push -u origin main
+（..）
+
+
+下载 
+git init 
+git clone https://github.com/Hokering/Git_Study.git
+
+第二次上传
+
+cd Git_Study 进入你刚刚下载的git文件夹内
+发现分支为main主流分支
+然后将 Git_Study 内的文件更新 我这次尝试新加了一个 New_text.txt
+git add . 						(git add 空格+点.)提交更新的项目到缓存区
+git commit - m “更新信息”      	是将暂存区里的改动给提交到本地的版本库，其中“更新信息”是你自己要写的备注 这次v4
+git remote rm origin 			将原来的项目抹去
+git remote add origin			ssh或者HTTPS地址
+git push -u origin master
